@@ -1,0 +1,8 @@
+@media only screen 
+and (max-device-width : 768px) 
+and (max-device-width : 1024px)  
+{
+    .carousel{
+        min-width: 100% !important;
+    }
+}

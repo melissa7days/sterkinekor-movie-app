@@ -1,0 +1,10 @@
+<input #searchBox id="search-box" [(ngModel)]="hero" placeholder="Search for a movie" style="background-color: #212326 !important; color: gray !important; border: none !important; margin-top: 30px; height: 80px; border-radius: 3px; display: block; margin-left: auto; margin-right: auto; text-align:left; font-size: 2.233em; width: 870px; padding-left: 15px; font-family: Montserrat,sans-serif;"/>
+  
+    <ul class="search-result">
+      <li *ngFor="let hero of movies$ | filter:hero" >
+        <a routerLink="/detail/{{hero.id}}" style="color: grey;">
+          {{hero.title}}
+        </a>
+      </li>
+    </ul>
+
